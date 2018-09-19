@@ -1,0 +1,45 @@
+.fs-nav-list {
+  	list-style: none;
+    padding: 0;
+    display: inline-flex;
+    float: right;
+    margin: 1em;
+    border-bottom: 1px solid orange;
+}
+
+.fs-nav-list li {
+		margin: 1em;
+}
+
+.fs-nav h3 {
+    display: inline-block;
+    margin: 1.5em;
+    font-weight: 100;
+}
+
+.example-container {
+	   max-width: 20em;
+    /* text-align: center; */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.example-container ul {
+	padding-left: 1em;
+}
+
+.example-container p {
+	margin-top: 1em;
+	color: orange;
+}
+
+.example-container a {
+	color: #fff !important;
+	text-decoration: none !important;
+}
+
+.example-container li {
+	margin-bottom: 0.5em;
+}
