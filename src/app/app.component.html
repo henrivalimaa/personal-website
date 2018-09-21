@@ -1,22 +1,19 @@
 <div class="fs-nav">
-    <h3>Henri Välimaa</h3>
+    <h3 class="d-none d-lg-block">Henri Välimaa</h3>
     <ul class="fs-nav-list">
-      <li>Home</li>
-      <li>About</li>
-      <li>Portfolio</li>
-      <li>Blog</li>
+      <li><a routerLink="/home" [ngClass]="{'activated':routerState === '/home'}">Home</a></li>
+      <li><a routerLink="/about" [ngClass]="{'activated':routerState === '/about'}">About</a></li>
+      <li><a routerLink="/portfolio" [ngClass]="{'activated':routerState === '/portfolio'}">Portfolio</a></li>
+      <li><a routerLink="/blog" [ngClass]="{'activated':routerState === '/blog'}">Blog</a></li>
     </ul>
+    <div class="nav-links d-none d-lg-block">
+      <a href="https://github.com/henrivalimaa" target="_blank"><i class="fab fa-2x fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/henri-valimaa" target="_blank"><i class="fab fa-2x fa-linkedin-in"></i></a>
+    </div>
+    <button class="nav-contact-btn d-none d-lg-block" (click)="showContactForm=!showContactForm">Contact</button>
 </div>
 
-<div class="example-container">
-  <h1>Coming soon...</h1>
-  <p>See my other projects:</p>
-  <ul>
-    <li><a href="https://yiptree.com" target="_blank">Yiptree</a></li>
-    <li><a href="http://35.242.188.206/hrm" target="_blank">HRM</a></li>
-    <li><a href="http://35.242.188.206/pubg-tracker" target="_blank">PUBG Stats tracker</a></li>
-    <li><a href="http://35.242.188.206/escape-room" target="_blank">Escape the Room</a></li>
-    <li><a href="https://almerin.com" target="_blank">Almerin</a></li>
-    <li><a href="http://www.jonesbarber.fi" target="_blank">Jone's Barber</a></li>
-  </ul>
-</div>
+<main [@fade]="o.isActivated ? o.activatedRoute : ''">
+  <router-outlet #o="outlet"></router-outlet>
+</main>
+<contact-form [show]="showContactForm"></contact-form>

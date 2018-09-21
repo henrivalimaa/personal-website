@@ -1,0 +1,27 @@
+<div class="site-message" *ngIf="showMessage" [@slide]>
+  <p>{{ message }}</p>
+  <button class="message-close-btn" (click)="siteMessage=false">x</button>
+</div>
+
+<div class="contact-form" *ngIf="show" [@slideForm]>
+  <button class="close-btn" (click)="show=false">x</button>
+  <p class="text-center">Contact me</p>
+  <mat-form-field>
+    <input type="email" matInput placeholder="Email">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput placeholder="Subject">
+  </mat-form-field>
+  <mat-form-field>
+    <textarea matInput
+        #input 
+        maxlength="1000" 
+        placeholder="Message"
+        cdkTextareaAutosize
+        #autosize="cdkTextareaAutosize"
+        cdkAutosizeMinRows="2"
+        cdkAutosizeMaxRows="5"></textarea>
+    <mat-hint align="end">{{input.value?.length || 0}}/1000</mat-hint>
+  </mat-form-field>
+  <button mat-raised-button color="accent" (click)="sendMessage()">Send</button>
+</div>
