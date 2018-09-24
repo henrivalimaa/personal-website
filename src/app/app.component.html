@@ -1,16 +1,28 @@
 <div class="fs-nav">
-    <h3 class="d-none d-lg-block">Henri Välimaa</h3>
+    <img class="d-none d-lg-block" src="" />
     <ul class="fs-nav-list">
-      <li><a routerLink="/home" [ngClass]="{'activated':routerState === '/home'}">Home</a></li>
-      <li><a routerLink="/about" [ngClass]="{'activated':routerState === '/about'}">About</a></li>
-      <li><a routerLink="/portfolio" [ngClass]="{'activated':routerState === '/portfolio'}">Portfolio</a></li>
-      <li><a routerLink="/blog" [ngClass]="{'activated':routerState === '/blog'}">Blog</a></li>
+      <li><a routerLink="/home" [ngClass]="{'activated':routerState === '/home'}">
+        <label class="d-none d-sm-block">Home</label>
+        <i class="fas fa-home d-block d-sm-none"></i>
+      </a></li>
+      <li><a routerLink="/about" [ngClass]="{'activated':routerState === '/about'}">
+        <label class="d-none d-sm-block">About</label>
+        <i class="fas fa-user d-block d-sm-none"></i>
+      </a></li>
+      <li><a routerLink="/portfolio" [ngClass]="{'activated':routerState === '/portfolio'}">
+        <label class="d-none d-sm-block">Portfolio</label>
+        <i class="fas fa-folder d-block d-sm-none"></i>
+      </a></li>
+      <li><a routerLink="/blog" [ngClass]="{'activated':routerState === '/blog'}">
+        <label class="d-none d-sm-block">Blog</label>
+        <i class="fas fa-comment-alt d-block d-sm-none"></i>
+      </a></li>
     </ul>
     <div class="nav-links d-none d-lg-block">
       <a href="https://github.com/henrivalimaa" target="_blank"><i class="fab fa-2x fa-github"></i></a>
       <a href="https://www.linkedin.com/in/henri-valimaa" target="_blank"><i class="fab fa-2x fa-linkedin-in"></i></a>
     </div>
-    <button class="nav-contact-btn d-none d-lg-block" (click)="showContactForm=!showContactForm">Contact</button>
+    <button class="nav-contact-btn d-none d-md-block" (click)="showContactForm=!showContactForm">Contact</button>
 </div>
 
 <main [@fade]="o.isActivated ? o.activatedRoute : ''">
