@@ -1,5 +1,5 @@
 <div class="fs-nav">
-    <img class="d-none d-lg-block" src="" />
+    <img class="logo" src="assets/images/logo/logo-white.png" />
     <ul class="fs-nav-list">
       <li><a routerLink="/home" [ngClass]="{'activated':routerState === '/home'}">
         <label class="d-none d-sm-block">Home</label>
@@ -22,7 +22,15 @@
       <a href="https://github.com/henrivalimaa" target="_blank"><i class="fab fa-2x fa-github"></i></a>
       <a href="https://www.linkedin.com/in/henri-valimaa" target="_blank"><i class="fab fa-2x fa-linkedin-in"></i></a>
     </div>
-    <button class="nav-contact-btn d-none d-md-block" (click)="showContactForm=!showContactForm">Contact</button>
+    <button class="nav-contact-btn d-none d-md-block" (click)="showContactForm=true">Contact</button>
+    <button class="d-block d-md-none nav-contact-btn-sm" (click)="showAdditionalNav=!showAdditionalNav"><i class="fas fa-ellipsis-v"></i></button>
+
+    <div class="additional-nav d-block d-md-none" *ngIf="showAdditionalNav" [@navSlide]>
+      <button class="a-nav-contact-btn" (click)="showContactForm=true; showAdditionalNav=false">Contact</button>
+      <button class="close-btn" (click)="showAdditionalNav=false"><i class="fas fa-caret-right"></i></button>
+      <a href="https://www.linkedin.com/in/henri-valimaa" target="_blank"><i class="fab fa-2x fa-linkedin-in"></i></a>
+      <a href="https://github.com/henrivalimaa" target="_blank"><i class="fab fa-2x fa-github"></i></a>
+    </div>
 </div>
 
 <main [@fade]="o.isActivated ? o.activatedRoute : ''">

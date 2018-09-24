@@ -59,3 +59,14 @@ export const contactFormAnimation =
         animate(200, style({ opacity: 0, right: '-30em' }))
       ]),
     ]);
+
+export const navSlideAnimation =
+    trigger('navSlide', [
+        transition(':enter', [
+        style({ left: '100%' }),
+        animate(200, style({ left: 0 }))
+      ]),
+      transition(':leave', [
+        animate(200, style({ left: '100%' }))
+      ]),
+    ]);

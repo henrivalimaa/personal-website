@@ -70,3 +70,61 @@
 	margin-right: 0.5em;
 	color: #fff5;
 }
+
+.nav-contact-btn-sm {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 1em;
+    color: #fff5;
+    background: transparent;
+    border: none;
+}
+
+.additional-nav {
+    width: 100%;
+    position: absolute;
+    bottom: 100%;
+    background: #ddd1;
+    padding: 0.5em;
+    border-top: 1px solid #ddd2;
+    border-left: 1px solid #ddd2;
+}
+
+.additional-nav .a-nav-contact-btn {
+    background: transparent;
+    border: 1px solid #fff5;
+    box-shadow: none;
+    padding: 0.5em 1.5em;
+    color: #fff5;
+    float: right;
+}
+
+.additional-nav a {
+    float: right;
+    /* margin-left: 0.5em; */
+    margin-right: 2em;
+    font-size: 0.75em;
+    position: relative;
+    top: 0.5em;
+    color: #ddd5;
+}
+
+.additional-nav .close-btn {
+    float: left;
+    background: transparent;
+    border: none;
+    color: #7d5922;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 1em;
+}
+
+.logo {
+    position: absolute;
+    height: 1.5em;
+    left: 1.5em;
+    top: 50%;
+    transform: translateY(-50%);
+}

@@ -4,13 +4,13 @@ import { Router, Event, NavigationEnd } from '@angular/router';
 
 import { ContactFormComponent } from './contact-form/contact-form.component';
 
-import { fadeAnimation } from "./animation/animations";
+import { fadeAnimation, navSlideAnimation } from "./animation/animations";
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  animations: [fadeAnimation]
+  animations: [fadeAnimation, navSlideAnimation]
 })
 export class AppComponent {
 

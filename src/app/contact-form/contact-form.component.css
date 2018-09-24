@@ -1,11 +1,12 @@
 .contact-form {
     position: fixed;
-    bottom: 4.7em;
+    bottom: 0;
     background: #020202;
     right: 0;
     padding: 1em;
     width: 17em;
     border: 1px solid #ddd4;
+    z-index: 3;
 }
 
 .contact-form .mat-form-field {
