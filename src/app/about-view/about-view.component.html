@@ -1,3 +1,16 @@
-<div class="center">
-  <h1 class="title">&#x3C;about/&#x3E;</h1>
+<h1 class="title center" *ngIf="!viewInit" [@logoFade]>&#x3C;about/&#x3E;</h1>
+
+<div class="center view about-view" *ngIf="viewInit" [@logoFade]>
+	<p class="greeting">Hi, I'M</p>
+	<p class="name">HENRI</p>
+	<p class="name surname">VÄLIMAA</p>
+	<p class="bold">WEB DEVELOPER</p>
+	<p class="view-text">
+		Lorem Ipsum has been the <a>industry's</a> standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into <a>electronic</a> typesetting, remaining essentially unchanged.
+	</p>
+	<p class="view-text">
+		Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an <a>unknown</a> printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic <a>typesetting</a>, remaining essentially unchanged.
+	</p>
+
+	<p class="bold">MY SKILLS</p>
 </div>

@@ -27,8 +27,8 @@ export const fadeAnimation = trigger('fade', [
   ])
 ]);
 
-export const loaderFadeAnimation =
-    trigger('loaderFade', [
+export const logoFadeAnimation =
+    trigger('logoFade', [
         transition(':enter', [
         style({ opacity: 0 }),
         animate(500, style({ opacity: 1 }))

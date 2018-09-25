@@ -37,6 +37,10 @@ main {
 	margin: 1em;
 }
 
+.mt2 {
+  margin-top: 2em;
+}
+
 .center {
 	position: absolute;
 	left: 50%;
@@ -50,6 +54,17 @@ main {
   font-size: 60px;
   font-weight: 100;
   color: #fff6;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.view {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
 }
 
 @media only screen and (max-width: 500px) {

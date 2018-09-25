@@ -5,3 +5,17 @@
   font-weight: 100;
   color: #fff6;
 }
+
+.about-me-btn {
+    color: #828282;
+    background: #ddd1;
+    padding: 0.5em 2em;
+    margin-top: 1em;
+    border: 1px solid #ddd5;
+    border-right: 1px solid #ffa5003b;
+    border-bottom: 1px solid #ffa50040;
+    /* border-radius: 25px; */
+    border-top: none;
+    border-left: none;
+    width: 13em;
+}

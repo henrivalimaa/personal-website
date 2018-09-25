@@ -44,7 +44,8 @@
 	border-top: 1px solid #ddd2;
 	position: fixed;
 	bottom: 0;
-	width: 100%; 
+	width: 100%;
+    background: #020202;
 }
 
 .nav-contact-btn {
