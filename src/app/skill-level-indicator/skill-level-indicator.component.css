@@ -1,0 +1,36 @@
+.skill-level-indicator label {
+	margin-right: 1em;
+	min-width: 8em;
+	margin-bottom: 0;
+}
+
+.skill-level-indicator {
+	margin-bottom: 0.5em;
+}
+
+.skill-level-indicator small {
+	display: block;
+	color: #ddd8;
+}
+
+.indicator {
+	height: 0.85em;
+	width: 0.85em;
+	background: #dddddd21;
+	border-radius: 50%;
+	display: inline-block;
+	margin-right: 0.4em;
+	position: relative;
+	top: 2px;
+}
+
+.filled {
+	height: 0.85em;
+	width: 0.85em;
+	background: orange;
+	border-radius: 50%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}

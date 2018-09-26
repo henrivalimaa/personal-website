@@ -1,0 +1,7 @@
+<div class="skill-level-indicator">
+	<label>{{ label }}</label>
+	<div *ngFor="let indicator of indicators" class="indicator">
+		<div [ngClass]="{'filled':indicator === 1}"></div>
+	</div>
+	<small>{{ description }}</small>
+</div>

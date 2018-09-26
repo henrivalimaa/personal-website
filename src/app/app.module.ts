@@ -16,6 +16,7 @@ import { BlogViewComponent } from './blog-view/blog-view.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 
 import { RoutingModule } from './routing/routing.module';
+import { SkillLevelIndicatorComponent } from './skill-level-indicator/skill-level-indicator.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { RoutingModule } from './routing/routing.module';
     PortfolioViewComponent,
     HomeViewComponent,
     BlogViewComponent,
-    ContactFormComponent
+    ContactFormComponent,
+    SkillLevelIndicatorComponent
   ],
   imports: [
     BrowserModule,

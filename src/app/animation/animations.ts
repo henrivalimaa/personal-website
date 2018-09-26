@@ -16,12 +16,12 @@ export const fadeAnimation = trigger('fade', [
     ),
     query(
       ':leave',
-      [style({ opacity: 1, left: 0 }), animate('0.3s', style({ opacity: 0, left: '100%' }))],
+      [style({ opacity: 1 }), animate('0.3s', style({ opacity: 0 }))],
       { optional: true }
     ),
     query(
       ':enter',
-      [style({ opacity: 0, top: '-100%' }), animate('0.3s', style({ opacity: 1, top: 0 }))],
+      [style({ opacity: 0 }), animate('0.3s', style({ opacity: 1 }))],
       { optional: true }
     )
   ])
