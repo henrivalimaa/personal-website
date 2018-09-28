@@ -101,7 +101,16 @@
     float: right;
 }
 
-.additional-nav a {
+.a-nav-contact-btn a {
+    color: #fff7 !important;
+    text-decoration: none !important;
+}
+
+.a-nav-contact-btn a:active {
+    text-decoration: none !important;
+}
+
+.additional-nav > a {
     float: right;
     /* margin-left: 0.5em; */
     margin-right: 1em;
