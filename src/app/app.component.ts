@@ -13,7 +13,8 @@ import { fadeAnimation, navSlideAnimation } from "./animation/animations";
   animations: [fadeAnimation, navSlideAnimation]
 })
 export class AppComponent {
-
+  private showContactForm: boolean = false;
+  private showAdditionalNav: boolean = false;
 	private routerState: string;
 
 	constructor(private router: Router) {
@@ -23,4 +24,9 @@ export class AppComponent {
     	}
   	});
 	}
+
+  displayContactForm(): void {
+    this.showContactForm = true;
+    this.showAdditionalNav = false;
+  }
 }

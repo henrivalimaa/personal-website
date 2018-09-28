@@ -42,11 +42,19 @@ main {
   margin-top: 2em;
 }
 
+.mr2 {
+  margin-right: 2em !important;
+}
+
 .center {
 	position: absolute;
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
+}
+
+.right {
+  float: right;
 }
 
 .title {

@@ -86,7 +86,7 @@
     width: 100%;
     position: absolute;
     bottom: 100%;
-    background: #ddd1;
+    background: #0e0e0ef7;
     padding: 0.5em;
     border-top: 1px solid #ddd2;
     border-left: 1px solid #ddd2;
@@ -104,10 +104,10 @@
 .additional-nav a {
     float: right;
     /* margin-left: 0.5em; */
-    margin-right: 2em;
+    margin-right: 1em;
     font-size: 0.75em;
     position: relative;
-    top: 0.5em;
+    top: 0.7em;
     color: #ddd5;
 }
 
@@ -120,6 +120,12 @@
     top: 50%;
     transform: translateY(-50%);
     left: 1em;
+}
+
+.additional-nav small {
+    margin-top: 1em;
+    margin-right: 1.5em;
+    color: #fff9;
 }
 
 .logo {

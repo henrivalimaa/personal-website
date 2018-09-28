@@ -1,0 +1,29 @@
+.portfolio-item small {
+	display: block;
+}
+
+.portfolio-item {
+    position: relative;
+    min-height: 14em;
+    background: #0008;
+    padding: 1em;
+    background-size: cover;
+    background-position: top center;
+}
+
+.portfolio-item .label {
+	margin-top: 4em;
+	margin-bottom: 0.5em;
+	color: #fff8;
+}
+
+.portfolio-item .short-description {
+	color: orange;
+}
+
+.portfolio-view-btn {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}

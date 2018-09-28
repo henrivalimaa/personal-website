@@ -26,10 +26,11 @@
     <button class="d-block d-md-none nav-contact-btn-sm" (click)="showAdditionalNav=!showAdditionalNav"><i class="fas fa-ellipsis-v"></i></button>
 
     <div class="additional-nav d-block d-md-none" *ngIf="showAdditionalNav" [@navSlide]>
-      <button class="a-nav-contact-btn" (click)="showContactForm=true; showAdditionalNav=false">Contact</button>
+      <button class="a-nav-contact-btn" (click)="displayContactForm()">Contact</button>
       <button class="close-btn" (click)="showAdditionalNav=false"><i class="fas fa-caret-right"></i></button>
-      <a href="https://www.linkedin.com/in/henri-valimaa" target="_blank"><i class="fab fa-2x fa-linkedin-in"></i></a>
+      <a href="https://www.linkedin.com/in/henri-valimaa" class="mr2" target="_blank"><i class="fab fa-2x fa-linkedin-in"></i></a>
       <a href="https://github.com/henrivalimaa" target="_blank"><i class="fab fa-2x fa-github"></i></a>
+      <small class="right">See me in</small>
     </div>
 </div>
 
