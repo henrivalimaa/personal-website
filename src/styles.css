@@ -87,12 +87,13 @@ main {
 
 @media only screen and (min-width: 680px) {
     .view-content {
-      max-width: 40em;
-      position: absolute;
+      max-width: 50em;
+      min-width: 40em;
+      position: relative;
       left: 50%;
       transform: translateX(-50%);
     }
-} 
+}
 
 @media only screen and (max-width: 500px) {
     .title {

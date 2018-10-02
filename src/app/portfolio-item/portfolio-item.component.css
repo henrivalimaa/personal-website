@@ -6,13 +6,12 @@
     position: relative;
     min-height: 14em;
     background: #0008;
-    padding: 1em;
     background-size: cover;
     background-position: top center;
+    transition: all 0.3s ease;
 }
 
 .portfolio-item .label {
-	margin-top: 4em;
 	margin-bottom: 0.5em;
 	color: #fff8;
 }
@@ -26,4 +25,40 @@
 	bottom: 0;
 	left: 0;
 	width: 100%;
+}
+
+.fs {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+
+.item-content {
+	transition: all 0.3s ease;
+}
+
+.item-text {
+	transition: all 0.2s ease;
+}
+
+.item-text-row {
+	transition: all 0.3s ease;
+}
+
+.portfolio-item:hover {
+	cursor: pointer;
+}
+
+.portfolio-item:hover .item-content {
+	border: 10px solid #fff3;
+}
+
+.portfolio-item:hover .item-text-row {
+	transform: scale(0.8, 0.8);
+}
+
+@media only screen and (min-width: 680px) {
+    .portfolio-item {
+      min-height: 20em;
+    }
 }

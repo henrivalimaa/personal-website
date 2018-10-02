@@ -23,3 +23,18 @@
 	color: orange !important;
 	text-decoration: underline !important;
 }
+
+@media only screen and (min-width: 680px) {
+    .portfolio-item {
+      display: inline-block;
+      width: 33.3333%;
+      margin-bottom: -8px;
+      border: 1px solid #1b1b1b;
+    }
+}
+
+.portfolio-view {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(https://images.pexels.com/photos/265047/pexels-photo-265047.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-size: cover;
+  background-position: center;  
+}
