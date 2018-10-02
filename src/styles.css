@@ -46,6 +46,10 @@ main {
   margin-right: 2em !important;
 }
 
+.mb0 {
+  margin-bottom: 0;
+}
+
 .center {
 	position: absolute;
 	left: 50%;

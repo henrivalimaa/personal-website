@@ -1,0 +1,25 @@
+.view-content {
+	padding: 1em;
+}
+
+.view-title h1 {
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 50px;
+}
+
+.view-title {
+	margin-bottom: 1em;
+	border-bottom: 1px solid orange;
+}
+
+.view-title h3 {
+  font-family: 'Caveat', cursive;
+  font-size: 25px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.view-content a {
+	color: orange !important;
+	text-decoration: underline !important;
+}

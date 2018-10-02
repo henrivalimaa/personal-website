@@ -13,9 +13,14 @@
 			Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an <a>unknown</a> printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic <a>typesetting</a>, remaining essentially unchanged.
 		</p>
 
-		<p class="bold">MY SKILLS (It's just my opinion)</p>
+		<p class="bold mt2">MY SKILLS (It's just my opinion)</p>
+
 		<div *ngFor="let skill of skills">
 			<skill-level-indicator [level]=skill.level [label]=skill.label [description]=skill.description></skill-level-indicator>	
 		</div>
+
+		<p class="view-text mt2">
+			Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an <a>unknown</a> printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic <a>typesetting</a>, remaining essentially unchanged.
+		</p>
 	</div>
 </div>
