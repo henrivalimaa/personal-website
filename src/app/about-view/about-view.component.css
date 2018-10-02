@@ -31,3 +31,13 @@
 	color: orange !important;
 	text-decoration: underline !important;
 }
+
+.resume-btn {
+    background: #fff1;
+    color: #fff6;
+    border: 1px solid #fff2;
+    padding: 0.5em 1em;
+    border-bottom: 1px solid #ffa50054;
+    border-right: 1px solid #ffa50054;
+    margin-left: 1em; 
+}
