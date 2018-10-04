@@ -19,6 +19,34 @@ import { RoutingModule } from './routing/routing.module';
 import { SkillLevelIndicatorComponent } from './skill-level-indicator/skill-level-indicator.component';
 import { PortfolioItemComponent } from './portfolio-item/portfolio-item.component';
 
+import {NgcCookieConsentModule, NgcCookieConsentConfig} from 'ngx-cookieconsent';
+ 
+const cookieConfig:NgcCookieConsentConfig = {
+  "cookie": {
+    "domain": "henrivalimaa.com"
+  },
+  "position": "top",
+  "theme": "block",
+  "palette": {
+    "popup": {
+      "background": "#000000",
+      "text": "#ffffff"
+    },
+    "button": {
+      "background": "#f1d600",
+      "text": "#000000"
+    }
+  },
+  "type": "info",
+  "content": {
+    "message": "Damn IT! This website uses cookies to ensure you get the best experience on our website.",
+    "dismiss": "I Agree",
+    "deny": "Deny",
+    "link": "Learn more",
+    "href": "https://cookiesandyou.com"
+  }
+};
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +64,8 @@ import { PortfolioItemComponent } from './portfolio-item/portfolio-item.componen
     BrowserAnimationsModule,
     MatFormFieldModule,
     MatInputModule,
-    MatButtonModule
+    MatButtonModule,
+    NgcCookieConsentModule.forRoot(cookieConfig)
   ],
   providers: [],
   bootstrap: [AppComponent]
