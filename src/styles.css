@@ -197,7 +197,7 @@ main {
   content: "";
   position: absolute;
   height: 5px;
-  border-bottom: 2px solid #ffa5005c;
+  border-bottom: 1px solid #ffa5005c;
   top: 0;
   width: 600px;
 }
@@ -211,6 +211,12 @@ main {
 }
 
 @media only screen and (max-width: 500px) {
+    .fancy {
+      font-size: 31px !important;
+    }
+}
+
+@media only screen and (max-width: 400px) {
     .fancy {
       font-size: 25px !important;
     }
