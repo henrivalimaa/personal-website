@@ -4,3 +4,20 @@
   background-size: cover;
   padding: 1em;
 }
+
+.map {
+	position: relative;
+	width: 100%;
+	height: 400px;
+}
+
+#map_div {
+	height: inherit;
+	width: inherit;
+}
+
+@media only screen and (max-width: 560px) {
+    .map {
+			height: 250px;
+		}
+}
