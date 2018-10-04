@@ -22,28 +22,28 @@ import { PortfolioItemComponent } from './portfolio-item/portfolio-item.componen
 import {NgcCookieConsentModule, NgcCookieConsentConfig} from 'ngx-cookieconsent';
  
 const cookieConfig:NgcCookieConsentConfig = {
-  "cookie": {
-    "domain": "henrivalimaa.com"
+  'cookie': {
+    'domain': 'henrivalimaa.com'
   },
-  "position": "top",
-  "theme": "block",
-  "palette": {
-    "popup": {
-      "background": "#000000",
-      "text": "#ffffff"
+  'position': 'top',
+  'theme': 'block',
+  'palette': {
+    'popup': {
+      'background': '#020202',
+      'text': '#ffffff'
     },
-    "button": {
-      "background": "#f1d600",
-      "text": "#000000"
+    'button': {
+      'background': '#f1d600',
+      'text': '#000000'
     }
   },
-  "type": "info",
-  "content": {
-    "message": "Damn IT! This website uses cookies to ensure you get the best experience on our website.",
-    "dismiss": "I Agree",
-    "deny": "Deny",
-    "link": "Learn more",
-    "href": "https://cookiesandyou.com"
+  'type': 'info',
+  'content': {
+    'message': 'This website uses cookies to improve your user experience. If you continue browsing, I assume that you accept my usage of cookies.',
+    'dismiss': 'I Accept',
+    'deny': 'Deny',
+    'link': 'Learn more',
+    'href': 'https://cookiesandyou.com'
   }
 };
 

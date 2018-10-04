@@ -159,3 +159,7 @@ main {
 .mat-input-element {
     caret-color: #fff;
 }
+
+.cc-banner.cc-top {
+  border-bottom: 1px solid #ddd3 !important;
+}
