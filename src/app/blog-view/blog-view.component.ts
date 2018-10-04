@@ -8,11 +8,13 @@ declare var google: any;
   styleUrls: ['./blog-view.component.css']
 })
 export class BlogViewComponent implements OnInit {
+	private count: number = 0;
 
   constructor() { }
 
   ngOnInit() {
   	this.initMap();
+  	this.startCountryCounter(30, 0);
   }
 
   initMap(): void {
@@ -22,6 +24,14 @@ export class BlogViewComponent implements OnInit {
     });
     google.charts.setOnLoadCallback(this.drawRegionsMap);
         
+  }
+
+  startCountryCounter(count:number, index: number): void {
+  	if(index === count + 1) return;
+  	setTimeout(() => {
+           this.count = index++;
+           this.startCountryCounter(count, index++);
+       }, 100);
   }
 
   drawRegionsMap(): void {
@@ -58,7 +68,7 @@ export class BlogViewComponent implements OnInit {
 
     let options = {
     	backgroundColor: 'transparent',
-  	 	datalessRegionColor: '#444444',
+  	 	datalessRegionColor: '#353535',
   	 	defaultColor: '#ce952d'
     };
 
