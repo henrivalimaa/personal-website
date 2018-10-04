@@ -56,7 +56,7 @@ export class BlogViewComponent implements OnInit {
       ['Cambodia'],
       ['Luxemburg'],
       ['Ireland'],
-      ['Great Britain'],
+      ['United Kingdom'],
       ['Spain'],
       ['Greece'],
       ['Belarus'],
@@ -74,6 +74,8 @@ export class BlogViewComponent implements OnInit {
   	 	datalessRegionColor: '#353535',
   	 	defaultColor: '#ce952d'
     };
+
+    console.log(data);
 
     let chart = new google.visualization.GeoChart(document.getElementById('map_div'));
 
