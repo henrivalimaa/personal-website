@@ -85,6 +85,37 @@ main {
   padding-bottom: 5em !important;
 }
 
+.view-text {
+  text-align: justify;
+}
+
+.view-text a {
+  color: orange !important;
+  text-decoration: underline !important;
+}
+
+.view-greeting {
+  font-family: 'Caveat', cursive;
+  font-size: 30px;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+.view-title {
+  font-family: 'Archivo Black', sans-serif;
+  margin-bottom: 0.5em;
+  font-size: 50px;
+  border-bottom: 1px solid orange;
+}
+
+.view-title .child {
+  margin-bottom: -10px;
+}
+
+.view-title .last-child {
+  margin-bottom: 0.5rem;
+}
+
 @media only screen and (min-width: 680px) {
     .view-content {
       max-width: 50em;

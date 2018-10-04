@@ -2,28 +2,64 @@
 
 <div class="center view about-view">
 	<div class="view-content">
-		<p class="greeting">Hi, I'M</p>
-		<p class="name">HENRI</p>
-		<p class="name surname">VÄLIMAA</p>
+		<p class="view-greeting">Hi, I'M</p>
+		<h1 class="view-title">
+			<p class="child">HENRI</p>
+			<p class="last-child">VÄLIMAA</p>
+		</h1>
 		<p class="bold">WEB DEVELOPER</p>
-		<p class="view-text">
-			Lorem Ipsum has been the <a>industry's</a> standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into <a>electronic</a> typesetting, remaining essentially unchanged.
-		</p>
-		<p class="view-text">
-			Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an <a>unknown</a> printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic <a>typesetting</a>, remaining essentially unchanged.
-		</p>
+		<div>
+			<p class="view-text">
+				<b>Lorem Ipsum</b> has been the <a>industry's</a> standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into <a>electronic</a> typesetting, remaining essentially unchanged.
+			</p>
+			<p class="view-text">
+				<b>Lorem Ipsum</b> has been the <a>industry's</a> standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into <a>electronic</a> typesetting, remaining essentially unchanged.
+			</p>
 
-		<label>Download</label>
-		<a class="resume-btn" href="assets/files/resume-henri-valimaa.pdf" download><i class="fas fa-download mr1"></i>Resume (.pdf)</a>
+			<p class="view-text">
+				<b>Lorem Ipsum</b> has been the <a>industry's</a> standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into <a>electronic</a> typesetting, remaining essentially unchanged.
+			</p>
 
-		<p class="bold mt2">MY SKILLS (It's just my opinion)</p>
+			<div>
+				<label>Download</label>
+				<a class="resume-btn" href="assets/files/resume-henri-valimaa.pdf" download><i class="fas fa-download mr1"></i>Resume (.pdf)</a>
+			</div>
+			
+			<div class="skills-container">
+				<h3>Toolbox</h3>
 
-		<div *ngFor="let skill of skills">
-			<skill-level-indicator [level]=skill.level [label]=skill.label [description]=skill.description></skill-level-indicator>	
+				<p class="view-text">
+					<b>Lorem Ipsum</b> has been the <a>industry's</a> standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into <a>electronic</a> typesetting, remaining essentially unchanged.
+				</p>
+
+				<div class="skill-set">
+					<p class="bold mt2">Programming</p>
+
+					<div *ngFor="let skill of skills.programming">
+						<skill-level-indicator [level]=skill.level [label]=skill.label [description]=skill.description></skill-level-indicator>	
+					</div>
+				</div>
+
+				<div class="skill-set">
+					<p class="bold mt2">Environments</p>
+
+					<div *ngFor="let skill of skills.environments">
+						<skill-level-indicator [level]=skill.level [label]=skill.label [description]=skill.description></skill-level-indicator>	
+					</div>
+				</div>
+
+				<div class="skill-set">
+					<p class="bold mt2">Workflow</p>
+
+					<div *ngFor="let skill of skills.workflow">
+						<skill-level-indicator [level]=skill.level [label]=skill.label [description]=skill.description></skill-level-indicator>	
+					</div>
+				</div>
+			</div>
+
+			<p class="view-text mt2">
+				Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an <a>unknown</a> printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic <a>typesetting</a>, remaining essentially unchanged.
+			</p>
 		</div>
-
-		<p class="view-text mt2">
-			Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an <a>unknown</a> printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic <a>typesetting</a>, remaining essentially unchanged.
-		</p>
 	</div>
 </div>
