@@ -40,7 +40,7 @@ const cookieConfig:NgcCookieConsentConfig = {
   'type': 'info',
   'content': {
     'message': 'This website uses cookies to improve your user experience. If you continue browsing, I assume that you accept my usage of cookies.',
-    'dismiss': 'I Accept',
+    'dismiss': 'Accept',
     'deny': 'Deny',
     'link': 'Learn more',
     'href': 'https://cookiesandyou.com'

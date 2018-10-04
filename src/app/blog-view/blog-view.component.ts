@@ -27,7 +27,10 @@ export class BlogViewComponent implements OnInit {
   }
 
   startCountryCounter(count:number, index: number): void {
-  	if(index === count + 1) return;
+  	if(index === count + 1) {
+  		return;
+  	}
+
   	setTimeout(() => {
            this.count = index++;
            this.startCountryCounter(count, index++);
