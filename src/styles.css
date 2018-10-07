@@ -42,6 +42,10 @@ main {
   margin-right: 1em;
 }
 
+.mt05 {
+  margin-top: 0.5em;
+}
+
 .mt2 {
   margin-top: 2em;
 }
@@ -52,6 +56,10 @@ main {
 
 .mb0 {
   margin-bottom: 0;
+}
+
+.pt05 {
+  padding-top: 0.5em;
 }
 
 .center {
@@ -83,6 +91,10 @@ main {
   width: 100%;
   overflow-y: scroll;
   padding-bottom: 5em !important;
+}
+
+.section {
+  margin-bottom: 1em;
 }
 
 .view-text {

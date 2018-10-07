@@ -47,4 +47,8 @@ export class AboutViewComponent implements OnInit {
     }
   }
 
+  copy(): void {
+    // TODO
+  }
+
 }

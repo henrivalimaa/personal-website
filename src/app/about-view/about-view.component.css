@@ -36,3 +36,31 @@
       width: 100%;
     }
 }
+
+.contact-section {
+  padding-bottom: 2em;
+}
+
+.label {
+  font-weight: bold;
+  border-bottom: 1px solid orange;
+}
+
+.social-media .fab {
+  color: #fff7;
+}
+
+.social-media .fa-linkedin-in {
+  position: relative;
+  top: 5px;
+  margin-left: 0.75em;
+  margin-right: 0.3em;
+}
+
+.social-media .fa-github {
+  position: relative;
+  top: 7px;
+}
+.email-address {
+  margin-left: 1em;
+}
