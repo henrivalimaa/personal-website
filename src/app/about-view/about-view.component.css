@@ -18,10 +18,15 @@
     border-bottom: 1px solid #ffa50054;
     border-right: 1px solid #ffa50054;
     display: inline-block;
-    min-width: 13em;
+    min-width: 12em;
     margin-right: 0.5em;
+    margin-top: 0.5em;
     text-align: center;
     transition: all 0.5s ease;
+}
+
+.resume-btn i {
+  float: left;
 }
 
 .resume-btn:hover {
@@ -79,6 +84,5 @@
     font-style: italic;
     color: #fff7;
     font-size: 24px;
-    font-family: cursive;
     margin-bottom: 0.5em;
 }
