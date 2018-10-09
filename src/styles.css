@@ -81,6 +81,10 @@ main {
   color: #fff6;
 }
 
+.inline {
+  display: inline-block;
+}
+
 .bold {
   font-weight: bold;
 }
@@ -178,6 +182,7 @@ main {
   left: 0 !important;
   right: 0 !important;
   border-bottom: 1px solid #ddd4 !important;
+  width: 100%;
 }
 .cc-btn {
   padding: 0.5em 1.5em !important;

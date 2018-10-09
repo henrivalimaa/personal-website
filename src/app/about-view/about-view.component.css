@@ -17,7 +17,16 @@
     padding: 0.5em 1em;
     border-bottom: 1px solid #ffa50054;
     border-right: 1px solid #ffa50054;
-    margin-left: 1em; 
+    display: inline-block;
+    min-width: 13em;
+    margin-right: 0.5em;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+
+.resume-btn:hover {
+  border-bottom: 1px solid #fff8;
+  text-decoration: none !important;
 }
 
 .skill-set {
@@ -44,6 +53,7 @@
 .label {
   font-weight: bold;
   border-bottom: 1px solid orange;
+  margin-right: 1em;
 }
 
 .social-media .fab {
@@ -63,4 +73,12 @@
 }
 .email-address {
   margin-left: 1em;
+}
+
+.quote {
+    font-style: italic;
+    color: #fff7;
+    font-size: 24px;
+    font-family: cursive;
+    margin-bottom: 0.5em;
 }

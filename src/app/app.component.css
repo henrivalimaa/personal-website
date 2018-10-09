@@ -13,6 +13,7 @@
 	border-top: 1px solid transparent;
 	/*padding: 1.5em;*/
 	/*transition: 2s ease-out;*/
+    transition: all 0.3s ease-out;
 }
 
 .fs-nav-list li > a {
