@@ -1,4 +1,4 @@
-<div class="portfolio-item text-center" [ngStyle]="{'background': properties.background.image, 'background-position': properties.background.position, 'background-size': properties.background.size }">
+<div class="portfolio-item text-center" [ngStyle]="{'background': properties.background.image, 'background-position': properties.background.position, 'background-size': properties.background.size }" (click)="displayProject()">
 	<div class="item-content fs">
 		<div class="item-text center">
 			<div class="item-text-row">
@@ -7,6 +7,44 @@
 				<small class="short-description">{{ properties.shortDescription }}</small>
 			</div>
 		</div>
+	</div>
+</div>
+
+<div class="project-container" *ngIf="showProject===true" [@logoFade]>
+	<button class="close-project-btn" (click)="displayProject()"><i class="fas fa-2x fa-times"></i></button>
+	<div class="project-background" [ngStyle]="{'background': properties.background.image, 'background-position': properties.background.position, 'background-size': properties.background.size }">
+			<div class="project-title">
+				<small>{{ properties.label }}</small>
+				<h3>{{ properties.name }}</h3>
+				<small class="short-description">{{ properties.shortDescription }}</small>
+			</div>
+	</div>
+	<div class="pre-scrollable project-description">
+		<p>
+			<b>Lorem Ipsum</b> has been the <a>industry's</a> standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into <a>electronic</a> typesetting, remaining essentially unchanged.
+		</p>
+		<p>
+			<b>Lorem Ipsum</b> has been the <a>industry's</a> standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into <a>electronic</a> typesetting, remaining essentially unchanged.
+		</p>
+		<p>
+			<b>Lorem Ipsum</b> has been the <a>industry's</a> standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into <a>electronic</a> typesetting, remaining essentially unchanged.
+		</p>
+		<p>
+			<b>Lorem Ipsum</b> has been the <a>industry's</a> standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into <a>electronic</a> typesetting, remaining essentially unchanged.
+		</p>
+		<p>
+			<b>Lorem Ipsum</b> has been the <a>industry's</a> standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into <a>electronic</a> typesetting, remaining essentially unchanged.
+		</p>
+	</div>
+	<div class="project-web-info">
+		<div class="subtitle">
+			<h3 class="fancy"><span>Available on</span></h3>
+		</div>
+		<ul class="web-list">
+			<li><i class="fas fa-globe-asia"></i><a href="">henrivalimaa.com/escape-room</a></li>
+			<li><i class="fab fa-github"></i><a href="">https://github.com/henrivalimaa/escape-room</a></li>
+		</ul>
+		<button (click)="displayProject()" class="close-btn">Close</button>
 	</div>
 </div>
 
