@@ -184,6 +184,17 @@ main {
   border-bottom: 1px solid #ddd4 !important;
   width: 100%;
 }
+
+.cc-floating {
+  border-right: 1px solid #ddd4 !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .cc-window.cc-floating {
+    max-width: 100% !important;
+  }
+}
+
 .cc-btn {
   padding: 0.5em 1.5em !important;
 }
@@ -237,4 +248,40 @@ main {
     .fancy {
       font-size: 25px !important;
     }
+}
+
+.slick-slider, .slick-list, .slick-track {
+  height: 100%;
+}
+
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none;
+  margin: 0.5em;
+  margin-top: 0;
+  transition: all 1s ease;
+  background-color: #ffffff05;
+}
+
+.slick-slide:focus {
+  outline: none !important;
+}
+
+.slick-dots {
+    height: 2em !important;
+    width: 15em !important;
+    z-index: 10000;
+    left: 50% !important;
+    top: -3em !important;
+    transform: translateX(-50%) !important;
+}
+
+.slick-dots li button:before {
+    color: white !important;
+}
+
+.slick-dots li.slick-active button:before {
+    color: orange !important;
 }

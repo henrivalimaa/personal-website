@@ -15,6 +15,7 @@ export class PortfolioViewComponent implements OnInit {
   ngOnInit() {
   	this.portfolioItems = [
 			{ 
+				id: 0,
 				label: 'Education Technologies', 
 				name: 'YipTree', 
 				shortDescription: 'Personal Learning Environment', 
@@ -27,6 +28,7 @@ export class PortfolioViewComponent implements OnInit {
 				status: 'Completed'
 			},
 			{ 
+				id: 1,
 				label: 'Solution Provider', 
 				name: 'Almerin', 
 				shortDescription: 'Company Website', 
@@ -39,6 +41,7 @@ export class PortfolioViewComponent implements OnInit {
 				status: 'Completed'
 			},
 			{ 
+				id: 2,
 				label: 'Barbershop (Tampere)', 
 				name: 'Jone\'s Barber', 
 				shortDescription: 'Company Website', 
@@ -51,6 +54,7 @@ export class PortfolioViewComponent implements OnInit {
 				status: 'Completed'
 			},
 			{ 
+				id: 3,
 				label: 'Game development', 
 				name: 'Pubg Stats Tracker', 
 				shortDescription: 'Gaming software', 
@@ -63,6 +67,7 @@ export class PortfolioViewComponent implements OnInit {
 				status: 'Completed'
 			},
 			{ 
+				id: 4,
 				label: 'HR Mangement', 
 				name: 'HRM', 
 				shortDescription: 'HRM Software', 
@@ -76,6 +81,7 @@ export class PortfolioViewComponent implements OnInit {
 			},
 
 			{ 
+				id: 5,
 				label: 'Game development', 
 				name: 'Escape The Room', 
 				shortDescription: 'Web Based Escape Room Game', 

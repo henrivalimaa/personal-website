@@ -38,6 +38,17 @@ export const logoFadeAnimation =
       ]),
     ]);
 
+export const fadeOutAnimation =
+  trigger('fadeOut', [
+      transition(':enter', [
+      style({ opacity: 0 }),
+      animate(0, style({ opacity: 1 }))
+    ]),
+    transition(':leave', [
+      animate(500, style({ opacity: 0 }))
+    ]),
+  ]);
+
 export const messageAnimation =
     trigger('slide', [
         transition(':enter', [

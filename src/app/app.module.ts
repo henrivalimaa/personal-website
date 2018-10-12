@@ -19,7 +19,8 @@ import { RoutingModule } from './routing/routing.module';
 import { SkillLevelIndicatorComponent } from './skill-level-indicator/skill-level-indicator.component';
 import { PortfolioItemComponent } from './portfolio-item/portfolio-item.component';
 
-import {NgcCookieConsentModule, NgcCookieConsentConfig} from 'ngx-cookieconsent';
+import { NgcCookieConsentModule, NgcCookieConsentConfig } from 'ngx-cookieconsent';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
  
 const cookieConfig:NgcCookieConsentConfig = {
   'cookie': {
@@ -65,6 +66,7 @@ const cookieConfig:NgcCookieConsentConfig = {
     MatFormFieldModule,
     MatInputModule,
     MatButtonModule,
+    SlickCarouselModule,
     NgcCookieConsentModule.forRoot(cookieConfig)
   ],
   providers: [],
