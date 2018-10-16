@@ -109,4 +109,5 @@ export class PortfolioItemComponent implements OnInit {
   ];
 
   slideConfig = { 'slidesToShow': 3, 'dots': true };
+  mobileSlideConfig = { 'slidesToShow': 1, 'dots': true };
 }

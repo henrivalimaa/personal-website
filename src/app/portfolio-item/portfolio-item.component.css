@@ -87,7 +87,7 @@
 
 .project-background {
 	background-size: contain;
-	height: 25%;
+	height: 20%;
 }
 
 .project-title {
@@ -108,13 +108,13 @@
 .project-web-info {
 	padding: 1em;
 	padding-top: 0;
-	height: 25%;
+	height: 35%;
 }
 
 .project-description {
 	padding: 1em;
-	max-height: 50%;
-	height: 50%;
+	max-height: 45%;
+	height: 45%;
 }
 
 .project-description a {
@@ -147,8 +147,12 @@
 
 
 @media only screen and (max-height: 700px) {
+		.project-background {
+			max-height: 20%;
+		}
+
 		.project-description {
-			max-height: 45%;
+			max-height: 42.5%;
 		}
 
 		.project-web-info {
@@ -158,11 +162,15 @@
 
 @media only screen and (max-height: 600px) {
 		.project-background {
-			height: 20%;
+			max-height: 20%;
+		}
+
+		.project-description {
+			max-height: 35%;
 		}
 
 		.project-web-info {
-			height: 35%;
+			height: 30%;
 		}
 }
 
@@ -171,7 +179,7 @@
 	margin-top: 4em;
 }
 
-.project-carousel .project-description {
+.carousel-slide .project-description {
 	overflow: hidden;
 }
 
@@ -195,6 +203,27 @@
 	transform: translateY(-50%);
 	color: #ffd52c30;
 	font-size: 40px;
+}
+
+.m-slick-control {
+    position: absolute;
+    top: 1em;
+    z-index: 1000;
+    border: none;
+    background-color: transparent;
+}
+
+.m-slick-control i {
+    color: #ffd52c30;
+    font-size: 30px;
+}
+
+.m-prev {
+  left: 4em;
+}
+
+.m-next {
+	right: 4em;
 }
 
 .prev {
