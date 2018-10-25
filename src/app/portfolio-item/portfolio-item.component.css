@@ -50,7 +50,7 @@
 }
 
 .portfolio-item:hover .item-content {
-	border: 10px solid #fff3;
+	border: 15px solid #fff3;
 }
 
 .portfolio-item:hover .item-text-row {

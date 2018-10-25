@@ -15,6 +15,7 @@ export class HomeViewComponent implements OnInit {
 
   ngOnInit() {
   	this.displayLogo();
+    this.initStars();
   }
 
   displayLogo(): void {
@@ -22,5 +23,25 @@ export class HomeViewComponent implements OnInit {
            this.showLogo = true;
        }, 1000);
   }
+
+  initStars(): void {
+    for(let i = 0; i < 100; i++) {
+      this.stars.push({ 
+        left: getRandomPosition(0, window.innerWidth).toString() + 'px',
+        top: getRandomPosition(0, window.innerHeight - 200).toString() + 'px',
+        delay: getRandomDelay(0, 3).toString() + 's'
+      });
+    }
+
+    function getRandomPosition(min, max) {
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
+    function getRandomDelay(min, max) {
+        return Math.random() * (max - min) + min;
+    }
+  }
+
+  stars: Array<any> = [];
 
 }
