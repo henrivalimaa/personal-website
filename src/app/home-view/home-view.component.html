@@ -1,7 +1,11 @@
-<div class="center text-center home-logo">
-	<img src="assets/images/logo/logo-white.png" *ngIf="showLogo" [@logoFade]>
-	<!--<h2 class="mt2 title">Henri Välimaa</h2>
-	<h4 class="title">Developer</h4>-->
-	<!--<button class="about-me-btn">&#x3C;more-about-me/&#x3E;</button>-->
+<div class="pre-scrollable">
+	<div class="center text-center home-logo">
+		<img src="assets/images/logo/logo-white.png" *ngIf="showLogo" [@logoFade]>
+		<!--<h2 class="mt2 title">Henri Välimaa</h2>
+		<h4 class="title">Developer</h4>-->
+		<!--<button class="about-me-btn">&#x3C;more-about-me/&#x3E;</button>-->
+	</div>
+	<div class="shooting-star-l"></div>
+	<div class="shooting-star-r"></div>
+	<div class="star" *ngFor="let star of stars" [ngStyle]="{ 'left': star.left, 'top': star.top, 'animation-delay': star.delay }"></div>
 </div>
-<div class="star" *ngFor="let star of stars" [ngStyle]="{ 'left': star.left, 'top': star.top, 'animation-delay': star.delay }"></div>

@@ -1,29 +1,15 @@
-.about-me-btn {
-    color: #828282;
-    background: #ddd1;
-    padding: 0.5em 2em;
-    margin-top: 1em;
-    border: 1px solid #ddd5;
-    border-right: 1px solid #ffa5003b;
-    border-bottom: 1px solid #ffa50040;
-    /* border-radius: 25px; */
-    border-top: none;
-    border-left: none;
-    width: 13em;
-}
-
 .home-logo {
   top: 45% !important;
+  opacity: 0.5;
+  position: fixed;
 }
 
 .star {
     height: 2px;
     width: 2px;
-    position: absolute;
+    position: fixed;
     background-color: #fff3;
     animation: shine 4s infinite;
-    top: 1em;
-    left: 1em;
     border-radius: 50%;
 }
 
@@ -32,4 +18,74 @@
     25%  {background-color: #fff6;}
     50%  {background-color: #fff;}
     100% {background-color: #fff2;}
+}
+
+.shooting-star-l {
+    height: 1px;
+    width: 100px;
+    position: fixed;
+    background-color: #fff3;
+    transform: rotate(-15deg);
+    animation: shootRight 10s infinite;
+    animation-delay: 3s;
+    left: -100%;
+    top: 80%;
+}
+
+.shooting-star-r {
+    height: 1px;
+    width: 100px;
+    position: fixed;
+    background-color: #fff3;
+    transform: rotate(10deg);
+    animation: shootLeft 10s infinite;
+    animation-delay: 5s;
+    top: 50%;
+    left: 200%;
+}
+
+@media only screen and (max-width: 560px) {
+    .shooting-star-l {
+        width: 50px;
+        transform: rotate(-25deg);
+        animation: shootRight-m 7s infinite;
+        animation-delay: 2s;
+    }
+
+    .shooting-star-r {
+        width: 50px;
+        transform: rotate(17deg);
+        animation: shootLeft-m 7s infinite;
+        animation-delay: 5s;
+    }
+}
+
+@keyframes shootRight {
+    0%   { left: -100%; top: 80%; }
+    30%  { left: 200%; top: 0; }
+    100%  { left: 200%; top: 0; }
+}
+
+@keyframes shootLeft {
+    0%   { left: 200%; top: 50%; }
+    30%  { left: -100%; top: 0; }
+    100%  { left: -100%; top: 0; }
+}
+
+@keyframes shootRight-m {
+    0%   { left: -100%; top: 80%; }
+    35%  { left: 200%; top: 0; }
+    100%  { left: 200%; top: 0; }
+}
+
+@keyframes shootLeft-m {
+    0%   { left: 200%; top: 50%; }
+    35%  { left: -100%; top: 0; }
+    100%  { left: -100%; top: 0; }
+}
+
+.moon {
+    position: absolute;
+    top: 100%;
+    overflow: hidden;
 }
