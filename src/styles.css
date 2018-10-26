@@ -115,6 +115,7 @@ main {
   font-size: 30px;
   margin-bottom: 0;
   font-weight: bold;
+  position: relative;
 }
 
 .view-title {
@@ -126,10 +127,12 @@ main {
 }
 
 .view-title .child {
+  position: relative;
   margin-bottom: -10px;
 }
 
 .view-title .last-child {
+  position: relative;
   margin-bottom: 0.5rem;
 }
 

@@ -44,7 +44,6 @@ export class HomeViewComponent implements OnInit {
   }
 
   onSwipe(event : any) {
-    console.log('Hewlo');
     this.router.navigate(['about']);
   }
 

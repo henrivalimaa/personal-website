@@ -1,9 +1,8 @@
 <div class="view portfolio-view">
 	<div class="view-content">
-		<p class="view-greeting">This is My</p>
-		<h1 class="view-title">Portfolio</h1>
-		
-		<div class="section view-description">
+		<p class="view-greeting" *ngIf="view.greeting" [@down]>This is My</p>
+		<h1 class="view-title" *ngIf="view.title" [@down]>Portfolio</h1>
+		<div class="section view-description" *ngIf="view.content" [@logoFade]>
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-12">
@@ -13,12 +12,12 @@
 				</div>
 			</div>
 		</div>
-		<div class="subtitle">
+		<div class="subtitle" *ngIf="view.content" [@logoFade]>
 			<h3 class="fancy"><span>My Recent Work</span></h3>
 		</div>
 </div>
 
-<div class="portfolio-items">
+<div class="portfolio-items" *ngIf="view.content" [@logoFade]>
 	<div *ngFor="let item of portfolioItems" class="portfolio-item">
 			<portfolio-item [properties]="item"></portfolio-item>
 		</div>

@@ -2,17 +2,29 @@ import { Component, OnInit } from '@angular/core';
 
 import { PortfolioItemComponent } from '../portfolio-item/portfolio-item.component';
 
+import { logoFadeAnimation, downAnimation, rightAnimation } from "../animation/animations";
+
 @Component({
   selector: 'app-portfolio-view',
   templateUrl: './portfolio-view.component.html',
-  styleUrls: ['./portfolio-view.component.css']
+  styleUrls: ['./portfolio-view.component.css'],
+  animations: [logoFadeAnimation, downAnimation, rightAnimation]
 })
 export class PortfolioViewComponent implements OnInit {
 	private portfolioItems: Array<any>;
+	private view: any = {};
 
   constructor() { }
 
   ngOnInit() {
+  	setTimeout(() => {
+      this.view.greeting = true;
+      this.view.title = true;
+      setTimeout(() => {
+        this.view.content = true;
+      }, 650);
+    }, 500);
+
   	this.portfolioItems = [
 			{ 
 				id: 0,

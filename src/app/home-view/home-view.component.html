@@ -1,4 +1,4 @@
-<div style="height: 100%;" (swipe)="onSwipe($event)">
+<div style="height: 100%;" (swipe)="onSwipe($event)" (swipeup)="onSwipe($event)">
 	<div class="center text-center home-logo">
 		<img src="assets/images/logo/logo-white.png" *ngIf="showLogo" [@logoFade]>
 	</div>

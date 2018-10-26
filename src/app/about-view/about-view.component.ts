@@ -2,17 +2,18 @@ import { Component, OnInit } from '@angular/core';
 
 import { SkillLevelIndicatorComponent } from '../skill-level-indicator/skill-level-indicator.component';
 
-import { logoFadeAnimation } from "../animation/animations";
+import { logoFadeAnimation, downAnimation, rightAnimation } from "../animation/animations";
 
 @Component({
   selector: 'app-about-view',
   templateUrl: './about-view.component.html',
   styleUrls: ['./about-view.component.css'],
-  animations: [logoFadeAnimation]
+  animations: [logoFadeAnimation, downAnimation, rightAnimation]
 })
+
 export class AboutViewComponent implements OnInit {
   private skills: any;
-  private view: any;
+  private view: any = {};
 
   constructor() { }
 
@@ -45,10 +46,12 @@ export class AboutViewComponent implements OnInit {
         { label: 'UML', level: 4, description: 'Design & Architecture' }
       ]
     }
+    setTimeout(() => {
+      this.view.greeting = true;
+      this.view.title = true;
+      setTimeout(() => {
+        this.view.content = true;
+      }, 650);
+    }, 500);
   }
-
-  copy(): void {
-    // TODO
-  }
-
 }

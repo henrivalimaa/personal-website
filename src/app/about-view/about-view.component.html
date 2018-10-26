@@ -2,14 +2,14 @@
 
 <div class="center view about-view">
 	<div class="view-content">
-		<p class="view-greeting">Hi, I'M</p>
-		<h1 class="view-title">
+		<p class="view-greeting" *ngIf="view.greeting" [@down]>Hi, I'M</p>
+		<h1 class="view-title" *ngIf="view.title" [@down]>
 			<p class="child">HENRI</p>
 			<p class="last-child">VÄLIMAA</p>
 			<div class="self-portrait"><img src="/assets/images/backgrounds/henri-valimaa.png"></div>
 		</h1>
-		<p class="bold">WEB DEVELOPER</p>
-		<div>
+		<div *ngIf="view.content" [@logoFade]>
+			<p class="bold">WEB DEVELOPER</p>
 			<div class="section about-section">
 				<p class="view-text">
 					<b>I'm</b> a 26 year old former <a>basketball player</a> originally from <a>Lappeenranta</a>, Finland. Nowadays through complicated path I've been studying in University of Jyväskylä computer science and I'm living with my beautiful wife Eveliina and dog called Jedi. Currently we are living at <a>Jyväskylä</a>, Finland.
