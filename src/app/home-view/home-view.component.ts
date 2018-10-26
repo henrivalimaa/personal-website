@@ -43,7 +43,8 @@ export class HomeViewComponent implements OnInit {
     }
   }
 
-  onPan(event : any) {
+  onSwipe(event : any) {
+    console.log('Hewlo');
     this.router.navigate(['about']);
   }
 
