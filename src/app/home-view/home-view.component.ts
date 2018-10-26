@@ -44,8 +44,7 @@ export class HomeViewComponent implements OnInit {
   }
 
   onPan(event : any) {
-    console.log('Helo')
-    this.router.navigate(['/about']);
+    this.router.navigate(['about']);
   }
 
 }
