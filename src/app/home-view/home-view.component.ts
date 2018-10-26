@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Router } from '@angular/router';
 import { logoFadeAnimation } from "../animation/animations";
 
 @Component({
@@ -10,8 +10,9 @@ import { logoFadeAnimation } from "../animation/animations";
 })
 export class HomeViewComponent implements OnInit {
 	private showLogo: boolean = false;
+  private stars: Array<any> = [];
 
-  constructor() { }
+  constructor(private router : Router) { }
 
   ngOnInit() {
   	this.displayLogo();
@@ -42,6 +43,9 @@ export class HomeViewComponent implements OnInit {
     }
   }
 
-  stars: Array<any> = [];
+  onPan(event : any) {
+    console.log('Helo')
+    this.router.navigate(['/about']);
+  }
 
 }
