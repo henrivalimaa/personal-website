@@ -37,13 +37,22 @@ export class PortfolioItemComponent implements OnInit {
 			label: 'Education Technologies', 
 			name: 'YipTree', 
 			shortDescription: 'Personal Learning Environment', 
-			description: '', 
+			description: 'Personal learning environment which utilizes artificial intelligence. This project is funded by EU goverment and has been active for 4 years. I started there as an full-stack developer and a system architect. Last year I moved towards sales and marketing to improve our global distribution.', 
+			skills: ['AngularJS', 'Java (Spring & Hibernate)', 'Sass', 'AWS', 'Jenkins', 'docker', 'scrum', 'team management', 'marketing', 'sales'],
 			background: {
 				image: 'linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4) ), url(https://pro2-bar-s3-cdn-cf3.myportfolio.com/84bc6461bb2abbb65ae9e645f8f60b7d/464b0568-94e4-488f-b2a2-fb887e973fbd_rw_1920.jpg?h=1008b1b34b97f91924eb0755587cfaef)',
 				position: 'center top',
 				size: 'cover'
 			},
-			status: 'Completed'
+			status: 'Completed',
+			positions: ['Full-stack Developer', 'System Architect', 'Team leader', 'Key Account Manager'],
+			web: {
+				link: 'https://yiptree.com',
+				repository: {
+					label: 'Not available',
+					link: ''
+				}
+			}
 		},
 		{ 
 			label: 'Solution Provider', 
@@ -55,7 +64,15 @@ export class PortfolioItemComponent implements OnInit {
 				position: 'center top',
 				size: 'cover'
 			},
-			status: 'Completed'
+			status: 'Completed',
+			positions: ['Full-stack Developer', 'System Architect', 'Team leader', 'Key Account Manager'],
+			web: {
+				link: 'https://yiptree.com',
+				repository: {
+					label: 'Not available',
+					link: ''
+				}
+			}	
 		},
 		{ 
 			label: 'Barbershop (Tampere)', 
@@ -67,7 +84,14 @@ export class PortfolioItemComponent implements OnInit {
 				position: 'center',
 				size: 'cover'
 			},
-			status: 'Completed'
+			status: 'Completed',
+			web: {
+				link: 'https://yiptree.com',
+				repository: {
+					label: 'Not available',
+					link: ''
+				}
+			}
 		},
 		{ 
 			label: 'Game development', 
@@ -79,7 +103,15 @@ export class PortfolioItemComponent implements OnInit {
 				position: 'center',
 				size: 'cover'
 			},
-			status: 'Completed'
+			status: 'Completed',
+			positions: ['Full-stack Developer', 'System Architect', 'Team leader', 'Key Account Manager'],
+			web: {
+				link: 'https://yiptree.com',
+				repository: {
+					label: 'Not available',
+					link: ''
+				}
+			}
 		},
 		{ 
 			label: 'HR Mangement', 
@@ -91,7 +123,15 @@ export class PortfolioItemComponent implements OnInit {
 				position: 'center',
 				size: 'cover'
 			},
-			status: 'Completed'
+			status: 'Completed',
+			positions: ['Full-stack Developer', 'System Architect', 'Team leader', 'Key Account Manager'],
+			web: {
+				link: 'https://yiptree.com',
+				repository: {
+					label: 'Not available',
+					link: ''
+				}
+			}
 		},
 
 		{ 
@@ -104,7 +144,15 @@ export class PortfolioItemComponent implements OnInit {
 				position: 'center',
 				size: 'cover'
 			},
-			status: 'Completed'
+			status: 'Completed',
+			positions: ['Full-stack Developer', 'System Architect', 'Team leader', 'Key Account Manager'],
+			web: {
+				link: 'https://yiptree.com',
+				repository: {
+					label: 'Not available',
+					link: ''
+				}
+			}
 		}
   ];
 

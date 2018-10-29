@@ -264,3 +264,29 @@
 .project-loader h3 {
 	width: 100%;
 }
+
+@media only screen and (max-width: 600px) {
+		.project-loader h3 {
+			top: 45%;
+			font-size: 20px;
+		}
+}
+
+.tag {
+    background-color: yellow;
+    background-color: #fff1;
+    padding: 3px 5px;
+    color: #fff5;
+    margin-right: 3px;
+    /* border-radius: 3px; */
+    display: inline-block;
+    margin-bottom: 3px;
+    border-bottom: 1px solid #ffa5004d;
+    /*border-left: 1px solid #ffa5004d;*/
+}
+
+.label {
+  font-weight: bold;
+  border-bottom: 1px solid orange;
+  margin-right: 1em;
+}

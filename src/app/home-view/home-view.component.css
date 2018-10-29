@@ -4,6 +4,38 @@
   position: fixed;
 }
 
+.home-logo h1 {
+    animation: neon 2s ease-in-out infinite alternate;
+    font-family: 'Caveat';
+    font-size: 120px;
+    color: #fff;
+}
+
+.home-logo p {
+    animation: labelNeon 2s ease-in-out infinite alternate;
+    font-family: 'Caveat';
+    font-size: 35px;
+    color: #fff;   
+}
+
+@keyframes neon {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de, 0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 75px #ff00de;
+  }
+}
+
+@keyframes labelNeon {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
+  }
+}
+
 .star {
     height: 2px;
     width: 2px;

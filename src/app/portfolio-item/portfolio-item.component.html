@@ -31,20 +31,22 @@
 							</div>
 					</div>
 					<div class="project-description">
-						<p>
-							<b>Lorem Ipsum</b> has been the <a>industry's</a> standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into <a>electronic</a> typesetting, remaining essentially unchanged.
-						</p>
-						<p>
-							<b>Lorem Ipsum</b> has been the <a>industry's</a> standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into <a>electronic</a> typesetting, remaining essentially unchanged.
-						</p>
+						<div>{{ project.description }}</div>
+						<div class="mt2">
+							<label class="label">Responsibilities: </label>
+							<span *ngFor="let position of project.positions; let isLast=last">{{ position }}{{isLast ? '' : ', '}}</span>
+						</div>
+						<div class="mt2">
+							<span *ngFor="let skill of project.skills" class="tag">{{ skill }}</span>
+						</div>
 					</div>
 					<div class="project-web-info">
 						<div class="subtitle">
 							<h3 class="fancy"><span>Available on</span></h3>
 						</div>
 						<ul class="web-list">
-							<li><i class="fab fa-github"></i><a href="">https://github.com</a></li>
-							<li><i class="fas fa-globe-asia"></i><a href="">henrivalimaa.com/escape-room</a></li>
+							<li><i class="fab fa-github"></i><a href="{{ project.web.repository.link }}" target="_blank">{{ project.web.repository.label }}</a></li>
+							<li><i class="fas fa-globe-asia"></i><a href="{{ project.web.link }}" target="_blank">{{ project.web.link }}</a></li>
 						</ul>
 					</div>
 	      </div>
@@ -59,15 +61,14 @@
 							</div>
 					</div>
 					<div class="pre-scrollable project-description">
-						<p>
-							<b>Lorem Ipsum</b> has been the <a>industry's</a> standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into <a>electronic</a> typesetting, remaining essentially unchanged.
-						</p>
-						<p>
-							<b>Lorem Ipsum</b> has been the <a>industry's</a> standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into <a>electronic</a> typesetting, remaining essentially unchanged.
-						</p>
-						<p>
-							<b>Lorem Ipsum</b> has been the <a>industry's</a> standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into <a>electronic</a> typesetting, remaining essentially unchanged.
-						</p>
+						<div>{{ project.description }}</div>
+						<div class="mt2">
+							<label class="label">Responsibilities: </label>
+							<span *ngFor="let position of project.positions; let isLast=last">{{ position }}{{isLast ? '' : ', '}}</span>
+						</div>
+						<div class="mt2">
+							<span *ngFor="let skill of project.skills" class="tag">{{ skill }}</span>
+						</div>
 					</div>
 					<div class="project-web-info">
 						<div class="subtitle">

@@ -22,7 +22,7 @@ export class PortfolioViewComponent implements OnInit {
       this.view.title = true;
       setTimeout(() => {
         this.view.content = true;
-      }, 650);
+      }, 600);
     }, 500);
 
   	this.portfolioItems = [

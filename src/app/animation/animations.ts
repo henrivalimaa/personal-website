@@ -52,22 +52,22 @@ export const fadeOutAnimation =
 export const downAnimation =
   trigger('down', [
       transition(':enter', [
-      style({ opacity: 0, top: '-4em' }),
+      style({ opacity: 0, top: '-0.5em' }),
       animate(600, style({ opacity: 1, top: 0 }))
     ]),
     transition(':leave', [
-      animate(600, style({ opacity: 0, top: '-4em' }))
+      animate(600, style({ opacity: 0, top: '-0.5em' }))
     ]),
   ]);
 
 export const rightAnimation =
   trigger('right', [
       transition(':enter', [
-      style({ opacity: 0, left: '-100%' }),
-      animate(400, style({ opacity: 1, left: 0 }))
+      style({ opacity: 0, left: '-1em' }),
+      animate(600, style({ opacity: 1, left: 0 }))
     ]),
     transition(':leave', [
-      animate(400, style({ opacity: 0 }))
+      animate(600, style({ opacity: 0 }))
     ]),
   ]);
 
