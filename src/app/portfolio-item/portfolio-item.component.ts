@@ -36,7 +36,8 @@ export class PortfolioItemComponent implements OnInit {
    {
 			label: 'Education Technologies', 
 			name: 'YipTree', 
-			shortDescription: 'Personal Learning Environment', 
+			shortDescription: 'Personal Learning Environment',
+			informationLink: "https://almerin.com/yiptree/",
 			description: 'Personal learning environment which utilizes artificial intelligence. This project is funded by EU goverment and has been active for 4 years. I started there as an full-stack developer and a system architect. Last year I moved towards sales and marketing to improve our global distribution.', 
 			skills: ['AngularJS', 'Java (Spring & Hibernate)', 'Sass', 'AWS', 'Jenkins', 'docker', 'scrum', 'team management', 'marketing', 'sales'],
 			background: {
@@ -49,7 +50,7 @@ export class PortfolioItemComponent implements OnInit {
 			web: {
 				link: 'https://yiptree.com',
 				repository: {
-					label: 'Not available',
+					label: '',
 					link: ''
 				}
 			}
@@ -58,18 +59,19 @@ export class PortfolioItemComponent implements OnInit {
 			label: 'Solution Provider', 
 			name: 'Almerin', 
 			shortDescription: 'Company Website', 
-			description: '',
+			description: 'This website was created in co-operation with JAMK students where my responsibility was to be this projects team leader. I designed this website\'s architecture and SEO.',
+			skills: ['Wordpress', 'SEO', 'Team management', 'AWS', 'PHP'],
 			background: {
 				image: 'linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4) ), url(https://4.bp.blogspot.com/-Ry_TXQPqKOg/WO3JhNBRciI/AAAAAAAApI4/hJPri1K-Ks0x9tF2vS6VMZdtMU66kIbyQCLcB/s1600/IMG_5382.jpg)',
 				position: 'center top',
 				size: 'cover'
 			},
 			status: 'Completed',
-			positions: ['Full-stack Developer', 'System Architect', 'Team leader', 'Key Account Manager'],
+			positions: ['Full-stack Developer', 'Designer', 'Team leader'],
 			web: {
-				link: 'https://yiptree.com',
+				link: 'https://almerin.com',
 				repository: {
-					label: 'Not available',
+					label: '',
 					link: ''
 				}
 			}	
@@ -78,13 +80,15 @@ export class PortfolioItemComponent implements OnInit {
 			label: 'Barbershop (Tampere)', 
 			name: 'Jone\'s Barber', 
 			shortDescription: 'Company Website', 
-			description: '',
+			description: 'Barber shop located at Tampere needed a new website to cover their user needs. We created simple solution with wordpress where my responsibities were to manage our development team, design and implement SEO',
+			skills: ['Wordpress', 'SEO', 'Team management', 'PHP'],
 			background: {
 				image: 'linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5) ), url(http://www.jonesbarber.fi/wp-content/uploads/2016/06/homepagelogo-e1472041489437.png)',
 				position: 'center',
 				size: 'cover'
 			},
 			status: 'Completed',
+			positions: ['Full-stack Developer', 'Designer', 'Team leader'],
 			web: {
 				link: 'https://yiptree.com',
 				repository: {
@@ -96,8 +100,10 @@ export class PortfolioItemComponent implements OnInit {
 		{ 
 			label: 'Game development', 
 			name: 'Pubg Stats Tracker', 
-			shortDescription: 'Gaming software', 
-			description: '',
+			shortDescription: 'Gaming software',
+			informationLink: 'https://developer.playbattlegrounds.com/', 
+			description: 'This is my own project where I found a new API for PUBG statistics. I made a partnership deal with Blue Hole where I get limited access to their API with request limit of 100 request in a minute. Project was active and had somewhere around 1000 users in a day. For legal issues I needed to put the site down but it\'s still active under my own domain.',
+			skills: ['Angular', 'GCP', 'Sass', 'Docker', 'PUBG'],
 			background: {
 				image: 'linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4) ), url(https://images3.alphacoders.com/816/816720.jpg)',
 				position: 'center',
@@ -106,10 +112,10 @@ export class PortfolioItemComponent implements OnInit {
 			status: 'Completed',
 			positions: ['Full-stack Developer', 'System Architect', 'Team leader', 'Key Account Manager'],
 			web: {
-				link: 'https://yiptree.com',
+				link: 'http://henrivalimaa/pubg-tracker/',
 				repository: {
-					label: 'Not available',
-					link: ''
+					label: 'henrivalimaa/pubg-tracker',
+					link: 'https://github.com/henrivalimaa/pubg-tracker'
 				}
 			}
 		},
@@ -117,7 +123,8 @@ export class PortfolioItemComponent implements OnInit {
 			label: 'HR Mangement', 
 			name: 'HRM', 
 			shortDescription: 'HRM Software', 
-			description: '',
+			description: 'This HRM application was created for a Tech company which needed a sample about Angular and Django REST Framework. Application is active under my domain and can be tested with Google credentials.',
+			skills: ['Angular', 'GCP', 'Sass', 'Django', 'REST', 'Python', 'Docker', 'Google API integration'],
 			background: {
 				image: 'linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5) ), url(https://png.pngtree.com/thumb_back/fw800/back_pic/03/69/01/7957b416b366534.jpg)',
 				position: 'center',
@@ -138,7 +145,8 @@ export class PortfolioItemComponent implements OnInit {
 			label: 'Game development', 
 			name: 'Escape The Room', 
 			shortDescription: 'Web Based Escape Room Game', 
-			description: '',
+			description: 'Web-based escape room game created in co-opertion with some developer located here in Jyväskylä. Game can be tested eventhough it\'s not finished yet.',
+			skills: ['Angular', 'GCP', 'Sass', 'Docker', 'Escape room'],
 			background: {
 				image: 'linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4) ), url(https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png)',
 				position: 'center',

@@ -31,7 +31,14 @@
 							</div>
 					</div>
 					<div class="project-description">
-						<div>{{ project.description }}</div>
+						<div class="project-description-text">
+							{{ project.description }}
+							<a 
+								*ngIf="project.informationLink" 
+								href="{{ project.informationLink }}" 
+								target="_blank"
+								style="display: block;">More at {{ project.informationLink }}</a>
+						</div>
 						<div class="mt2">
 							<label class="label">Responsibilities: </label>
 							<span *ngFor="let position of project.positions; let isLast=last">{{ position }}{{isLast ? '' : ', '}}</span>
@@ -45,7 +52,11 @@
 							<h3 class="fancy"><span>Available on</span></h3>
 						</div>
 						<ul class="web-list">
-							<li><i class="fab fa-github"></i><a href="{{ project.web.repository.link }}" target="_blank">{{ project.web.repository.label }}</a></li>
+							<li>
+								<i class="fab fa-github"></i>
+								<a *ngIf="project.web.repository.link !== ''" href="{{ project.web.repository.link }}" target="_blank">{{ project.web.repository.label }}</a>
+								<span *ngIf="project.web.repository.link === ''" class="disabled">Not available</span>
+							</li>
 							<li><i class="fas fa-globe-asia"></i><a href="{{ project.web.link }}" target="_blank">{{ project.web.link }}</a></li>
 						</ul>
 					</div>

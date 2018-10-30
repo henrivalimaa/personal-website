@@ -290,3 +290,12 @@
   border-bottom: 1px solid orange;
   margin-right: 1em;
 }
+
+.disabled {
+  margin-left: 1em;
+  color: #8a8a8a;
+}
+
+.project-description-text {
+	min-height: 10.5em;
+}
